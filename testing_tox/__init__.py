@@ -30,7 +30,7 @@ Handy functions for testing tox plugins.
 import re
 import sys
 import sysconfig
-from typing import Iterable
+from typing import Iterable, cast
 
 # 3rd party
 import pytest
@@ -84,8 +84,9 @@ def prepare_stdout(stdout: str, toxinidir: PathPlus) -> str:
 			'',
 			stdout,
 			)
+
 	stdout = stdout.replace(
-			sysconfig.get_path("stdlib"),
+			cast(str, sysconfig.get_path("stdlib")),
 			f"/usr/lib/python{sys.version_info.major}.{sys.version_info.minor}",
 			)
 
