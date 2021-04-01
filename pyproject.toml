@@ -35,6 +35,7 @@ base-classifiers = [
     "Topic :: Software Development :: Quality Assurance",
     "Topic :: Software Development :: Testing",
     "Topic :: Software Development :: Testing :: Unit",
+    "Typing :: Typed",
 ]
 python-versions = [ "3.7", "3.8", "3.9",]
 python-implementations = [ "CPython",]

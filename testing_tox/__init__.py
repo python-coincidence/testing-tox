@@ -46,7 +46,7 @@ __email__: str = "dominic@davis-foster.co.uk"
 __all__ = ["prepare_stdout", "run_tox"]
 
 
-def run_tox(args: Iterable[str], workdir: PathPlus):
+def run_tox(args: Iterable[str], workdir: PathPlus) -> None:
 	"""
 	Run ``tox`` in ``workdir`` with the given arguments.
 
@@ -60,7 +60,7 @@ def run_tox(args: Iterable[str], workdir: PathPlus):
 		tox.cmdline(list(args))
 
 
-def prepare_stdout(stdout: str, toxinidir: PathPlus):
+def prepare_stdout(stdout: str, toxinidir: PathPlus) -> str:
 	"""
 	Given the content of ``sys.stdout`` captured from a run of ``tox``,
 	prepare the output for regression tests.
