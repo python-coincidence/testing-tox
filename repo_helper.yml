@@ -1,0 +1,34 @@
+# Configuration for 'repo_helper' (https://github.com/domdfcoding/repo_helper)
+---
+modname: 'testing-tox'
+copyright_years: 2021
+author: 'Dominic Davis-Foster'
+email: 'dominic@davis-foster.co.uk'
+username: 'python-coincidence'
+assignee: 'domdfcoding'
+version: '0.2.2'
+license: 'MIT'
+short_desc: 'Handy functions for testing tox plugins.'
+
+enable_conda: False
+enable_docs: False
+enable_tests: False
+on_pypi: False
+use_whey: true
+
+python_versions:
+ - 3.7
+ - 3.8
+ - 3.9
+ - 3.10-dev
+
+classifiers:
+ - 'Development Status :: 4 - Beta'
+ - 'Framework :: tox'
+ - 'Intended Audience :: Developers'
+ - 'Topic :: Software Development :: Quality Assurance'
+ - 'Topic :: Software Development :: Testing'
+ - 'Topic :: Software Development :: Testing :: Unit'
+
+keywords:
+ - tox

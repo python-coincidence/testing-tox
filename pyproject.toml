@@ -1,0 +1,45 @@
+[build-system]
+requires = [ "whey",]
+build-backend = "whey"
+
+[project]
+name = "testing-tox"
+version = "0.2.2"
+description = "Handy functions for testing tox plugins."
+readme = "README.rst"
+keywords = [ "tox",]
+dynamic = [ "requires-python", "classifiers", "dependencies",]
+
+[[project.authors]]
+email = "dominic@davis-foster.co.uk"
+name = "Dominic Davis-Foster"
+
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/python-coincidence/testing-tox"
+"Issue Tracker" = "https://github.com/python-coincidence/testing-tox/issues"
+"Source Code" = "https://github.com/python-coincidence/testing-tox"
+
+[tool.mkrecipe]
+extras = [ "all",]
+conda-channels = [ "python-coincidence",]
+
+[tool.whey]
+base-classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: tox",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Testing :: Unit",
+]
+python-versions = [ "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"
+package = "testing_tox"
+
+[tool.importcheck]
