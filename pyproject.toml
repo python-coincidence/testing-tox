@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "testing-tox"
-version = "0.2.2"
+version = "0.0.0"
 description = "Handy functions for testing tox plugins."
 readme = "README.rst"
 keywords = [ "tox",]

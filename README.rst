@@ -59,7 +59,7 @@ testing-tox
 .. |language| image:: https://img.shields.io/github/languages/top/python-coincidence/testing-tox
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/python-coincidence/testing-tox/v0.2.2
+.. |commits-since| image:: https://img.shields.io/github/commits-since/python-coincidence/testing-tox/v0.0.0
 	:target: https://github.com/python-coincidence/testing-tox/pulse
 	:alt: GitHub commits since tagged version
 
