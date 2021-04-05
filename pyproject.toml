@@ -44,3 +44,4 @@ license-key = "MIT"
 package = "testing_tox"
 
 [tool.importcheck]
+always = [ "testing_tox",]
