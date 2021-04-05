@@ -20,7 +20,7 @@ testing-tox
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained|
 	* - QA
-	  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
+	  - |codefactor| |actions_flake8| |actions_mypy|
 	* - Other
 	  - |license| |language| |requires|
 
@@ -69,10 +69,6 @@ testing-tox
 
 .. |maintained| image:: https://img.shields.io/maintenance/yes/2021
 	:alt: Maintenance
-
-.. |pre_commit_ci| image:: https://results.pre-commit.ci/badge/github/python-coincidence/testing-tox/master.svg
-	:target: https://results.pre-commit.ci/latest/github/python-coincidence/testing-tox/master
-	:alt: pre-commit.ci status
 
 .. end shields
 
