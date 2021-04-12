@@ -75,6 +75,21 @@ def prepare_stdout(stdout: str, toxinidir: PathPlus) -> str:
 	:param toxinidir:
 	"""  # noqa: D400
 
+	stdout = stdout.replace(
+			cast(str, sysconfig.get_path("stdlib")),
+			f"/usr/lib/python{sys.version_info.major}.{sys.version_info.minor}",
+			)
+
+	stdout = stdout.replace(
+			cast(str, sysconfig.get_path("purelib")),
+			f"/usr/lib/python{sys.version_info.major}.{sys.version_info.minor}/site-packages",
+			)
+
+	stdout = stdout.replace(
+			cast(str, sysconfig.get_path("platlib")),
+			f"/usr/lib/python{sys.version_info.major}.{sys.version_info.minor}/site-packages",
+			)
+
 	stdout = stdout.replace(str(toxinidir), "...")
 	stdout = re.sub(
 			r"\.\.\.[\\/]\.tox[\\/].*[\\/]lib[\\/]python3\.\d[\\/]site-packages[\\/]pip[\\/]"
@@ -83,11 +98,6 @@ def prepare_stdout(stdout: str, toxinidir: PathPlus) -> str:
 			r"in the next major release, {2}(warnings\.warn\(|DeprecationWarning,)",
 			'',
 			stdout,
-			)
-
-	stdout = stdout.replace(
-			cast(str, sysconfig.get_path("stdlib")),
-			f"/usr/lib/python{sys.version_info.major}.{sys.version_info.minor}",
 			)
 
 	return stdout
