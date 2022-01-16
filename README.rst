@@ -67,7 +67,7 @@ testing-tox
 	:target: https://github.com/python-coincidence/testing-tox/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2021
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2022
 	:alt: Maintenance
 
 .. end shields
