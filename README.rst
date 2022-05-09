@@ -44,8 +44,8 @@ testing-tox
 	:target: https://github.com/python-coincidence/testing-tox/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://requires.io/github/python-coincidence/testing-tox/requirements.svg?branch=master
-	:target: https://requires.io/github/python-coincidence/testing-tox/requirements/?branch=master
+.. |requires| image:: https://dependency-dash.herokuapp.com/github/python-coincidence/testing-tox/badge.svg
+	:target: https://dependency-dash.herokuapp.com/github/python-coincidence/testing-tox/
 	:alt: Requirements Status
 
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/python-coincidence/testing-tox?logo=codefactor
@@ -67,7 +67,7 @@ testing-tox
 	:target: https://github.com/python-coincidence/testing-tox/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2021
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2022
 	:alt: Maintenance
 
 .. end shields
