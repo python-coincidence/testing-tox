@@ -22,6 +22,9 @@ python_versions:
  - 3.9
  - "3.10"
  - 3.11-dev
+ - pypy37
+ - pypy38
+ - pypy39
 
 classifiers:
  - 'Development Status :: 4 - Beta'
