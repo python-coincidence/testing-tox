@@ -34,7 +34,7 @@ from typing import Iterable, cast
 
 # 3rd party
 import pytest
-import tox.reporter  # type: ignore
+import tox.reporter  # type: ignore[import]
 from domdf_python_tools.paths import PathPlus, in_directory
 
 __author__: str = "Dominic Davis-Foster"
